@@ -6,7 +6,9 @@ struct ContentView: View {
     @State var answer  = 0
     var body: some View {
         HStack{
-            
+            RoundedRectangle(cornerRadius: 40)
+                .frame(width: 30, height: 30)
+                .foregroundStyle(.white)
         
         TextField("Enter a Number", value: $number1, format: .number)
             .padding()
@@ -14,6 +16,7 @@ struct ContentView: View {
             .foregroundStyle(.white)
             .cornerRadius(10)
             .textFieldStyle(PlainTextFieldStyle())
+            
             
         
         
@@ -23,7 +26,12 @@ struct ContentView: View {
             .foregroundStyle(.white)
             .cornerRadius(10)
             .textFieldStyle(PlainTextFieldStyle())
-    }
+   
+            RoundedRectangle(cornerRadius: 40)
+                .frame(width: 30, height: 40)
+                .foregroundStyle(.white)
+        }
+        
         
         Button("Calculate Sum") {
             answer = number1 + number2
