@@ -9,11 +9,16 @@ struct ContentView: View {
         TextField("Enter a Number", value: $number1, format: .number)
         
         TextField("Enter a Number", value: $number2, format: .number)
-        Button("calulate") {
+        Button("Calculate Sum") {
             answer = number1 + number2
             
         }
         Text("\(answer)")
         
+        Button("Calculate Product") {
+            answer = number1 * number2
+           
+        }
+        Text("\(answer)")
     }
 }
