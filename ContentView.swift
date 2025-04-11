@@ -7,8 +7,17 @@ struct ContentView: View {
     var body: some View {
       
         TextField("Enter a Number", value: $number1, format: .number)
+            .padding()
+            .cornerRadius(10)
+            .textFieldStyle(PlainTextFieldStyle())
         
+     
         TextField("Enter a Number", value: $number2, format: .number)
+            .padding()
+            .cornerRadius(10)
+            .textFieldStyle(PlainTextFieldStyle())
+      
+        
         Button("Calculate Sum") {
             answer = number1 + number2
             
