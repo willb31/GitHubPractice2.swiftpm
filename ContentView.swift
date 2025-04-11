@@ -24,18 +24,30 @@ struct ContentView: View {
             answer = number1 + number2
             
         }
+        .font(.footnote)
+        .frame(width: 110, height: 60)
+        .foregroundStyle(.black)
+        .background(.gray)
         Text("\(answer)")
         
         Button("Calculate Subtraction") {
             answer = number1 - number2
            
         }
+        .font(.footnote)
+        .frame(width: 110, height: 60)
+        .foregroundStyle(.black)
+        .background(.gray)
         Text("\(answer)")
         
         Button("Calculate Product") {
             answer = number1 * number2
            
         }
+        .font(.footnote)
+        .frame(width: 110, height: 60)
+        .foregroundStyle(.black)
+        .background(.gray)
         Text("\(answer)")
        
         
