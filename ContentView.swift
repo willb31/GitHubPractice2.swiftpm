@@ -10,12 +10,17 @@ struct ContentView: View {
         
         TextField("Enter a Number", value: $number1, format: .number)
             .padding()
+            .background(.blue)
+            .foregroundStyle(.white)
             .cornerRadius(10)
             .textFieldStyle(PlainTextFieldStyle())
+            
         
         
         TextField("Enter a Number", value: $number2, format: .number)
             .padding()
+            .background(.blue)
+            .foregroundStyle(.white)
             .cornerRadius(10)
             .textFieldStyle(PlainTextFieldStyle())
     }
