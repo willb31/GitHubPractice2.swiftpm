@@ -15,10 +15,18 @@ struct ContentView: View {
         }
         Text("\(answer)")
         
+        Button("Calculate Subtraction") {
+            answer = number1 - number2
+           
+        }
+        Text("\(answer)")
+        
         Button("Calculate Product") {
             answer = number1 * number2
            
         }
         Text("\(answer)")
+       
+        
     }
 }
